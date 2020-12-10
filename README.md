@@ -14,14 +14,14 @@ I am sure that you are well equipped to handle this.
 
 ### Must-have features
 
-[ ]The dataset contains no missing values ("" or null)
-[ ]No duplicates
-[ ]Values are consolidated
-[ ]Data format is correct
-[ ]No blank spaces (ex: " I love python " => "I love python")
+- [x] The dataset contains no missing values ("" or null)
+- [x] No duplicates
+- [x] Values are consolidated
+- [x] Data format is correct
+- [x] No blank spaces (ex: " I love python " => "I love python")
 
 ### Nice-to-have features
 
-[ ] The more rows of data you use, the better. However, pay attention that the more data you have, the longer each operation needs to execute.
-[ ] Add new features computed using the features present that you think are going to be useful.
-[ ] Apply the preprocessing steps needed so that a future machine learning model can make the best use out of it **(feature selection, feature engineering, feature normalization, and resampling)**. You have to decide which one are necessary and which ones aren't.
+- [x] The more rows of data you use, the better. However, pay attention that the more data you have, the longer each operation needs to execute.
+- [x] Add new features computed using the features present that you think are going to be useful.
+- [ ] Apply the preprocessing steps needed so that a future machine learning model can make the best use out of it **(feature selection, feature engineering, feature normalization, and resampling)**. You have to decide which one are necessary and which ones aren't.
