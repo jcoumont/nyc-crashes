@@ -14,11 +14,11 @@ I am sure that you are well equipped to handle this.
 
 ### Must-have features
 
-[ ] The dataset contains no missing values ("" or null)
-[ ] No duplicates
-[ ] Values are consolidated
-[ ] Data format is correct
-[ ] No blank spaces (ex: " I love python " => "I love python")
+[ ]The dataset contains no missing values ("" or null)
+[ ]No duplicates
+[ ]Values are consolidated
+[ ]Data format is correct
+[ ]No blank spaces (ex: " I love python " => "I love python")
 
 ### Nice-to-have features
 
