@@ -57,15 +57,17 @@ You can find the data profiling result files in the `profiling` folder
 
 In this case, there is a lot of missing cells (29.6%) :
 
-| Field   | Missing values |
-| ------- | -------------- |
-| `borough`, `zipcode` | 35 %           |
+| Field       | Missing values |
+| ----------- | -------------- |
+| `borough`, `zipcode` | 35 % |
 | `location`, `latitude`, `longitude` | 8 % |
 | `on_street_name` | 26 % |
 | `off_street_name` | 53 % |
 | `cross_street_name` | 78 % |
 | `contributing_factor_vehicle_1` ... `contributing_factor_vehicle_5` | 0,4% - 99% |
 | `vehicule_type_code_1` ... `vehicule_type_code_5` | 0,7% - 99% |
+|  |  |
+
 ![Missing data preview](images/NYC_1000000_missing_data.png)
 
 ### Step 2 : Data cleaning
