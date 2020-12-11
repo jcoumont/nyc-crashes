@@ -197,9 +197,7 @@ After the spliting of the file to separate the training and the test data, it's 
 
 Due the machine learning argorithm that will be used to implement it's not needed to transform textual information to a numeric values. 
 So only the numeric values will be standardized by using a `z-score scaling`.
-$$
-z = (x - mean(x)) / std (x)
-$$
+
 ## Usage
 
 This project is made in different Jupyter Notebooks. 
