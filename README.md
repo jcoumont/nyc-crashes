@@ -66,7 +66,6 @@ In this case, there is a lot of missing cells (29.6%) :
 | `cross_street_name` | 78 % |
 | `contributing_factor_vehicle_1` ... `contributing_factor_vehicle_5` | 0,4% - 99% |
 | `vehicule_type_code_1` ... `vehicule_type_code_5` | 0,7% - 99% |
-|  |  |
 
 ![Missing data preview](images/NYC_1000000_missing_data.png)
 
