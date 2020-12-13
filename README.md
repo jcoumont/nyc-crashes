@@ -88,22 +88,15 @@ All string value where reformatted to :
 
 #### Zip_code / Borough
 
-These two fields have a lot of missing information and seemed interresiting to resolve. So I tried :
+To fill the missing zipcode and borough, I computed them on the basis of NYC zip code polygons using Geopandas.<br />
+The geojson file is in the `data` folder and can be dowloaded on [jsspina.carto.com](https://jsspina.carto.com/tables/nyc_zip_code_tabulation_areas_polygons/public/map)
 
-- compute the nearest point with `scipy.spatial.distance.cdist` on the basis of location information
-- compute the value on the basis of the data of lines where the location is similar
-- compute the value on the basis of the data of lines where the street fields are similar
+This operation generated some duplicates when the location was at the border of 2 zip code.<br />
+In these case, I kept the first rows information matching for this record.
 
-The first technique was OK with small dataset but crashed my computer when I tried it on a 100.000 records dataset. So it not possible to use it with a whole dataset of about 1.700.000 records and only allow to reduce the missing value to 26%.
+After that process, the missing datas where completed for all lines where location field was available.
 
-The second was more scalable on large dataset but give a less good result than the first method.
-On a 1.000.000 record this operation take multiple hours to reduct missing values to 29%.
-
-And the last one give a really poor result by reducing the missing values by less than 1%.
-
-After these test, it seems difficult to obtain better result.
-
-Finally these missing information was substituted by default values to be able to identify them in the future.
+Finally the few missing information still present were substituted by default values to be able to identify them in the future.
 
 #### Location / Longitude / Latitude
 
@@ -212,6 +205,7 @@ You can run them separately :
 
 To run these different Jupyter Notebooks, you need these python modules :
 
+- geopandas
 - numpy
 - pandas
 - pandas_profiling
